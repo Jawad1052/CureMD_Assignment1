@@ -1,0 +1,12 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {   
+        Console.WriteLine ("Enter a Number: ");
+        int num1=int.Parse(Console.ReadLine());
+        int squr=num1*num1;
+        Console.WriteLine ("The Square of " + num1+ " is "+ squr);
+    }
+}

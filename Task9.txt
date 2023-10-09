@@ -1,0 +1,16 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a number for Factorial: ");
+        int N = int.Parse(Console.ReadLine());
+        for (int i =N-1 ; i>=1; i--)
+        {
+            N=N*i;
+           
+        }
+         Console.WriteLine("Factorial is "+ N);
+    }
+}

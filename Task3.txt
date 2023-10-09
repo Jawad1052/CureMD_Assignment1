@@ -1,0 +1,14 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {   
+        Console.WriteLine ("Enter 1st Number: ");
+        int num1=int.Parse(Console.ReadLine());
+        Console.WriteLine ("Enter 2nd Number: ");
+        int num2=int.Parse(Console.ReadLine());
+        int sum=num1+num2;
+        Console.WriteLine ("The Sum of numbers is "+ sum);
+    }
+}

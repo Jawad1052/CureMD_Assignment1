@@ -1,0 +1,37 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Range for Prime: ");
+        int N = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Prime numbers till " + N + ":");
+        for (int i = 1; i <= N; i++)
+        {
+            bool isPrime = true;
+
+            if (i == 1 || i == 0)
+            {
+                isPrime = false;
+            }
+            else
+            {
+                for (int j = 2; j < i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+
+            if (isPrime)
+            {
+                Console.Write(i + " ");
+            }
+        }
+    }
+}
