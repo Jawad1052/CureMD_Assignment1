@@ -1,0 +1,24 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Please Enter Height Number : ");
+        int height=int.Parse(Console.ReadLine());    //Height to print Right Angle Triangle
+        if(height<=0)
+        {
+            Console.WriteLine("Invalid Height ");
+        }
+        for(int i=1;i<=height;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                Console.Write ("*");
+              
+            }
+              Console.WriteLine(" ");
+        }
+        
+    }
+}
